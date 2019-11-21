@@ -3,6 +3,13 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+body {
+  background-image: url(../sitebuild-tomi-jano/pics_menu/blue-sky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
 .info_block {
   display: grid;
   grid-template-columns: 1fr;
@@ -22,4 +29,5 @@
 
 .delivery_info {
   padding: 30px;
+  background: rgba(211, 132, 13, 1);
 }
