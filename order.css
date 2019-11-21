@@ -1,0 +1,25 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info_block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.info_block_text {
+  border: 2px;
+  width: 200px;
+}
+
+.info_block_input {
+  float: left;
+  text-align: left;
+  width: 500px;
+}
+
+.delivery_info {
+  padding: 30px;
+}
