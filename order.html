@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="order.css">
+    <title>Order</title>
+  </head>
+  <body>
+    <form>
+      <div class="delivery_info">
+        <!-- NÉV -->
+        <div class="info_block name_info">
+          <div class="info_block_text">Name</div>
+          <div class="info_block_input">
+            <table>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="név"
+                    maxlength="30"
+                    required
+                    id="firstname"
+                    placeholder="First Name"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="név"
+                    maxlength="30"
+                    required
+                    id="lastname"
+                    placeholder="Last Name"
+                  />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- TEL SZÁM -->
+        <div class="info_block phone_info">
+          <div class="info_block_text">Phone Number</div>
+          <div class="info_block_input">
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              value="+36"
+              placeholder="pl.: +36201234567"
+            />
+          </div>
+        </div>
+        <!-- EMAIL -->
+        <div class="email">
+          <div class="info_block_text">email address</div>
+          <div class="info_block_input">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="example@example.com"
+            />
+          </div>
+        </div>
+        <!-- CÍM -->
+        <div class="info_block address">
+          <div class="info_block_text">Address</div>
+          <div class="info_block_input">
+            <table>
+              <tr>
+                <td colspan="2">
+                  <input
+                    type="text"
+                    name="address_line_one"
+                    id="address_line_one"
+                    maxlength="60"
+                    required
+                    placeholder="Street address"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input
+                    type="text"
+                    name="address_line_two"
+                    id="address_line_two"
+                    maxlength="60"
+                    placeholder="Street address line two"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="postal_code"
+                    id="postal_code"
+                    maxlength="4"
+                    required
+                    placeholder="postal code"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    maxlength="10"
+                    required
+                    placeholder="city"
+                  />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- MEGJEGYZÉS -->
+        <div class="info_block comment">
+          <div class="info_block_text">aditional comments</div>
+          <div class="info_block_input">
+            <textarea
+              name="egyéb"
+              id="egyeb"
+              cols="30"
+              rows="10"
+              id="egyeb"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="order_button">
+        <button type="submit" id="submit">Place order</button>
+      </div>
+    </form>
+  </body>
+</html>
