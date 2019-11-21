@@ -2,6 +2,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.menu_wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 80% 1fr;
+  grid-auto-rows: 150px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
 
 body {
   background-image: url(../sitebuild-tomi-jano/pics_menu/blue-sky.jpg);
@@ -30,4 +40,27 @@ body {
 .delivery_info {
   padding: 30px;
   background: rgba(211, 132, 13, 1);
+}
+
+ul {
+  float: left;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: darkgoldenrod;
+  padding: 5px 20px;
+  border: 2px solid darkgreen;
+  transition: 0.6s ease;
+}
+
+ul li a:hover {
+  background-color: darkgoldenrod;
+  color: blue;
 }
