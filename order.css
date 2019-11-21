@@ -64,3 +64,8 @@ ul li a:hover {
   background-color: darkgoldenrod;
   color: blue;
 }
+
+td {
+  font-size: 30px;
+  color: white;
+}
